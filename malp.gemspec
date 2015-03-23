@@ -8,4 +8,5 @@ Gem::Specification.new do |s|
   s.description = 'Rake diagnostic task.'
 
   s.files         = ['lib/tasks/malp.rake']
+  s.require_paths = ["lib"]
 end
