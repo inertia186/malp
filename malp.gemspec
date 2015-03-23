@@ -7,6 +7,6 @@ Gem::Specification.new do |s|
   s.summary     = 'Malp Analytic Library Probe'
   s.description = 'Rake diagnostic task.'
 
-  s.files         = ['lib/tasks/malp.rake']
+  s.files         = ['tasks/malp.rake']
   s.require_paths = ["lib"]
 end
