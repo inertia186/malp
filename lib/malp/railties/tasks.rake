@@ -1,4 +1,5 @@
 require 'rake/testtask'
+
 Rake::TestTask.new do |t|
   t.name = 'malp'
   t.loader = :direct
