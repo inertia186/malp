@@ -1,6 +1,8 @@
 require 'malp/railtie' if defined? Rails
 
-class Malp
-  def self.start(context)
+module Malp
+  class << self
+
+  def start(context)
   end
 end
