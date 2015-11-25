@@ -1,10 +1,12 @@
-require 'rake/testtask'
+require 'malp'
+require 'rails'
 
-Rake::TestTask.new do |t|
-  t.name = 'malp'
-  t.loader = :direct
-  t.libs.push Dir.pwd
-  t.ruby_opts.push '-r', 'malp', '-e', 'Malp.start(:rails)'.inspect
+module Malp
+  class Railtie < Rails::Railtie
+    railtie_name :malp
+
+    rake_tasks do
+      load "tasks/malp.rake"
+    end
+  end
 end
-
-require 'rake/clean'
